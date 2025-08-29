@@ -3,11 +3,10 @@
     "version": "1.0.20250812",
     "description": "Drone Radio Control - CRC and Whitening control functions",
     "dependencies": {
-        "core": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
-        "droneRC.ts",
+        "main.ts",
         "sim.ts",
         "shims.d.ts"
     ],
