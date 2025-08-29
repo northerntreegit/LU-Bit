@@ -9,6 +9,7 @@
         "main.ts",
         "sim.ts",
         "shims.d.ts"
+        "radio_control.cpp"
     ],
     "public": true
 }
