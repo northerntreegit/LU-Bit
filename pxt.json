@@ -10,5 +10,12 @@
         "shims.d.ts",
         "radio_control.cpp"
     ],
-    "public": true
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "license": "MIT",
+    "supportedTargets": [
+        "microbit"
+    ]
 }
