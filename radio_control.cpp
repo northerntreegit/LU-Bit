@@ -1,9 +1,5 @@
 #include "pxt.h"
 
-// Simple C++ functions for drone radio control
-// 注意：这些函数直接操作nRF52833硬件寄存器，在真实硬件上需要底层访问权限
-
-// 前向声明需要的函数
 namespace pins {
     void digitalWritePin(int name, int value);
     void spiPins(int mosi, int miso, int sck);
@@ -17,9 +13,9 @@ namespace pxt {
 }
 
 
-namespace droneRC {
+namespace luBit {
 
-    //% shim=droneRC::TestFunction_C
+    //% shim=luBit::TestFunction_C
     void TestFunction_C() {
         // 发送10个1000Hz脉冲 (每个脉冲周期1ms)  
         for(int i = 0; i < 10; i++) {
@@ -282,7 +278,7 @@ namespace droneRC {
         NRF24L01_TxPacket((uint8_t*)&tx_data); //调用NRF发射数据
     }
     
-    //% shim=droneRC::InitNrf24_C
+    //% shim=luBit::InitNrf24_C
     bool InitNrf24_C() {
         // 初始化SPI口 
         // 注意：这些引脚需要根据实际硬件连接进行调整
@@ -320,7 +316,7 @@ namespace droneRC {
     }
 
 
-    //% shim=droneRC::SendRC_C
+    //% shim=luBit::SendRC_C
     bool SendRC_C(int throttle, int pitch, int roll, int yaw) {
         pins::digitalWritePin(MICROBIT_ID_IO_P15, 0);
         return true;
