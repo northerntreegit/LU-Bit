@@ -1,7 +1,7 @@
 {
-    "name": "drone_rc",
-    "version": "1.0.20250812",
-    "description": "Drone Radio Control - CRC and Whitening control functions",
+    "name": "LU-Bit",
+    "version": "0.0.1",
+    "description": "Microbit Extension @ LingNan University",
     "dependencies": {
         "core": "*"
     },

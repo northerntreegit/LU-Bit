@@ -1,5 +1,5 @@
-//% color=#E3008C weight=100 icon="\uf1d8" block="LN Drone RC"
-//% groups=['Radio Control']
+//% color=#E3008C weight=100 icon="\uf1d8" block="LU-Bit"
+//% groups=['RC Drone']
 namespace droneRC {
     //% block="TestVersion 1"
     //% weight=100
