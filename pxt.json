@@ -1,6 +1,5 @@
 {
     "name": "LU-Bit",
-    "version": "0.0.1",
     "description": "Microbit Extension @ LingNan University",
     "dependencies": {
         "core": "*"
